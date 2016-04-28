@@ -10,7 +10,7 @@ for the original problem.
 
 Install the package with `pip`:
 
-    pip install git+http://github.com/mrts/ubuntu-old-kernel-cleanup.git
+    sudo pip install git+http://github.com/mrts/ubuntu-old-kernel-cleanup.git
 
 Verify that the script was installed successfully by running it:
 

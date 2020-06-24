@@ -4,6 +4,7 @@
 # -h help
 # warn when running stale kernel (current kernel is not latest)
 
+from __future__ import print_function
 import re
 import subprocess
 
@@ -45,7 +46,7 @@ def get_version(version_string):
             if chunk.isdigit())
 
 def run_command(*args):
-    return subprocess.check_output(args)
+    return subprocess.check_output(args).decode('utf-8')
 
 if __name__ == '__main__':
     main()

@@ -13,7 +13,8 @@ class TestUbuntuOldKernelCleanup(unittest.TestCase):
         cleanup.run_command = return_dpkg_query_and_uname_responses
         cleanup.output = result_collector
         cleanup.main()
-        self.assertItemsEqual(result, EXPECTED)
+        result.sort()
+        self.assertEqual(result, EXPECTED)
 
 result = None
 
